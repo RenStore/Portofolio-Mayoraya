@@ -1,5 +1,5 @@
 /* Tampilan Mobile */
-@media only screen and (max-width: 600px) {
+@media(min-width: 360px) and (max-width: 600px) {
 
     /* Reset */
     * {
@@ -18,6 +18,9 @@
         color: #fff;
         font-family: 'Chakra Petch', sans-serif;
     }
+    .c-1 {
+        width: 100%;
+    }
 
     /* Header */
     .header {
@@ -26,17 +29,17 @@
         align-items: center;
         padding: 20px;
     }
-
     .list-h ul li a {
-        font-size: 16px;
+        font-size: 13px;
     }
-    .s-foto{
-        width: 100%;
+    .list-h ul {
+        gap: 0.8rem;
     }
     /* Bagian Gambar */
     .img {
         padding: 20px;
         text-align: center;
+        max-height: 300px;
     }
     #b-img img{
         width: 100%;
@@ -52,30 +55,36 @@
         height: 900px;
     
     }
-
+    #b-img img{
+        width: 50px;
+        height: 170px;
+    }
+    #bg img{
+        height: 300px;
+    }
     /* Kata-kata */
     .kata2 {
         text-align: center;
         display: flex;
         flex-direction: column;
-        width: 202px;
         align-items: center;
-        padding-left: 50px;
-        top: 240px;
-        gap: 1rem;
+        padding-left: 33px;
+        top: 170px;
+        gap: 0.4rem;
     }
 
     .kata2 p {
-        font-size: 15px;
-        max-width: 95px;
+        font-size: 11px;
+        max-width: 80px;
     }
 
     .kata2 h3 {
-        font-size: 23px;
+        font-size: 17px;
         max-width: 80px;
     }
     #p-shandy{
-        left: 10PX;
+        left: 124px;
+        top: 110px;
     }
     #p-shandy h4{
         font-size: 25px;
@@ -85,7 +94,6 @@
     }
     .img #p-shandy.p-shandy{
         font-size: 25px;
-        left: 10PX;
         opacity: 100%;
     }
     .checked:checked~ #b-img{
@@ -96,46 +104,215 @@
     #nama {
         margin-bottom: 20px;
         padding: 20px;
+        margin-top: 20px;
         text-align: center;
+        width: 160px;
+        height: 170px;
     }
 
     #nama h4 {
-        font-size: 30px;
+        font-size: 16px;
     }
 
     #nama p {
-        font-size: 16px;
+        font-size: 10px;
+    }
+    .navigasi{
+        margin-top: 15px;
+    }
+    .navigasi a{
+        width: 40px;
+        height: 5px;
     }
 
     /* Skill */
     .c-skill {
-        padding: 20px;
         text-align: center;
+        flex-direction: column;
+        gap: 0;
+        position: relative;
+        top: 170px;
     }
-
+    .c-skill #label li{
+        font-size: 40px;
+    }
+    .c-skill #label p{
+        font-size: 25   px;
+    }
+    .d-skill{
+        top: 250px;
+    }
+    .d-skill h4{
+        font-size: 30px;
+    }
+    .d-skill p{
+        font-size: 14px;
+    }
     #label {
         padding: 20px;
     }
-
+    .c-skill #label {
+        width: 150px;
+        height: 220px;
+        margin-top: 70px;
+    }
+    .bar-persen{
+        width: 140px;
+        margin-top: 9rem;
+        height: 400px;
+    }
+    .b-1{
+        width: 50px;
+        height: 15px;
+    }
+    #b-1{
+        position: absolute;
+        top: 6.5rem;
+    }
+    #b-2{
+        position: absolute;
+        top: 18.5rem;
+    }
+    #b-3{
+        position: absolute;
+        top: 30.3rem;
+    }
+    @keyframes bar1 /*keyframe-css----->*/{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 90px;
+        }
+    }
+    @keyframes bar2 /*keyframe-html----->*/{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 120px;
+        }
+    }
+    @keyframes bar3 /*keyframe-js----->*/{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 70px;
+        }
+    }
+    .load-css{
+        width: 90px;
+        height: 100%;
+    }
+    .load-html{
+        width: 120px;
+        height: 100%;
+    }
+    .load-js{
+        width: 70px;
+        height: 100%;
+    }
     .bar-persen {
         flex-direction: column;
         gap: 1rem;
         margin-top: 20px;
     }
 
-    .b-1, .load-css, .load-html, .load-js {
+    .b-1{
         width: 100%;
+    }
+    .garis-lurus{
+        margin-top: 17rem;
+    }
+    .g-lurus{
+        width: 3px;
+        height: 10rem;
     }
 
     /* Pendidikan */
+    .c-pendidikan{
+        width: 100%;
+        height: 70vh;
+        margin-top: 16rem;
+    }
+    .j-pendidikan h4{
+        font-size: 30px;
+        font-family: 'Briem Hand',sans-serif;
+        color: rgb(255, 174, 0);
+    }
+    .j-pendidikan p{
+        font-size: 15px;
+    }
     .c-pendidikan {
         padding: 20px;
+    }
+    /*--------------------SD----------------------*/
+    #c-judul-sd{
+        font-size: 11px;
+        transform: translateY(28px);
+    }
+    .SD #c-judul-sd.c-judul-sd{
+        transform: translateY(0);
+        color: #ffa600;
+    }
+    #d-sd{
+        font-size: 9px;
+    }
+     /*--------------------SMP----------------------*/
+    #c-judul-smp{
+        font-size: 11px;
+        transform: translateY(29px);
+    }
+    .SMP #c-judul-smp.c-judul-smp{
+        transform: translateY(6px);
+        color: #ffa600;
+    }
+    .SMP #d-smp.d-smp{
+        transform: translateY(-5px);
+    }
+    #d-smp{
+        font-size: 8px;
+    }
+     /*--------------------SMK----------------------*/
+    #c-judul-smk{
+        font-size: 11px;
+        transform: translateY(25px);
+    }
+    #d-smk{
+        font-size: 8px;
+    }
+    .SMK #d-smk.d-smk{
+        transform: translateY(-6px);
+    }
+    .SMK #c-judul-smk.c-judul-smk{
+        transform: translateY(8px);
+        color: #ffa600;
+    }
+     /*--------------------KULIAH----------------------*/
+    #c-judul-kuliah{
+        font-size: 11px;
+        transform: translateY(25px);
+    }
+    #d-kuliah{
+        font-size: 8px;
+    }
+    .KULIAH #d-kuliah.d-kuliah{
+        transform: translateY(-10px);
+    }
+    .KULIAH #c-judul-kuliah.c-judul-kuliah{
+        transform: translateY(0);
+        color: #ffa600;
+    }
+    /*--------------------------------------------------*/
+    #pd{
+        width: 150px;
+        height: 100px;
     }
 
     .jadi1 {
         flex-direction: column;
-        gap: 1rem;
-        margin-top: 20px;
+        gap: 0;
     }
 
     .c-btn-p1, .c-btn-p2 {
@@ -152,17 +329,105 @@
         width: 100%;
         height: 200px;
         margin-top: 20px;
+        overflow-x: hidden;
     }
+    .animasi1{
+        width: 300px;
+        height: 30px;
+        font-size: 24px;
+    }
+    @keyframes animasi1{
+        0%{
+            transform: translateX(-120%);
+        }
+        50%{
+            transform: translateX(10%);
+        }
+        100%{
+            transform: translateX(200%);
+        }
+    }
+    .judul-projek h4{
+        font-size: 30px;
+    }
+    .judul-projek p{
+        font-size: 14px;
+    }
+    .c-projek1{
+        margin-top: 100px;
+        width: 300px;
+        height:150px;
+    }
+    .c-projek2{
+        margin-top: 50px;
+        width: 300px;
+        height:150px;
+    }
+    .c-projek3{
+        margin-top: 50px;
+        width: 300px;
+        height:150px;
+        
+    }
+    .b-projek1 p{
+      transform: translateY(160px); 
+      transition: all 0.5s; 
+      pointer-events: none;
+      font-family: 'Chakra Petch',sans-serif;
+    }
+    .b-projek1 h3{
+        font-size: 40px;
+        text-shadow: 4px -4px 6px black;
+        font-family: 'Briem Hand',sans-serif;
+    }
+    .b-projek1 #renstore{
+        font-size: 40px;
+        transform: translateY(25px);
+        pointer-events: none;
+        transition: all 0.5s; 
+    }
+    .b-projek1 #renstore.renstore{
+        transform: translateY(-10px);
+        color: white;
+    }
+    .b-projek1 #d-renstore.d-renstore{
+        transform: translateY(-10px);
+    }
+
+    /*==============================renstore=====================================*/
+
+    .b-projek1 #renstore{
+        font-size: 30px; 
+    }
+    #d-renstore{
+        font-size: 10px;
+    }
+    .b-projek2 #shinka{
+        font-size: 30px; 
+    }
+    #d-shinka{
+        font-size: 10px;
+        max-width: 250px;
+    }
+    .b-projek3 #tugas{
+        font-size: 30px; 
+    }
+    #d-tugas{
+        font-size: 15px;
+    }
+     /*==============================shinka resto=====================================*/
 
     /* Kontak */
     .c-contact {
-        padding: 20px;
-        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+    .c-contact h3{
+        font-size: 30px;
     }
 
     #form {
         width: 100%;
-        padding: 20px;
+        padding-top: 10px;
     }
 
     .c-i-nama input, .c-i-email input, .c-i-telp input, .c-i-pesan textarea {
@@ -179,7 +444,6 @@
 
     /* Footer */
     footer {
-        padding: 20px;
         text-align: center;
     }
 
@@ -189,6 +453,8 @@
 
     /* Garis */
     .garis-item {
-        height: 10px;
+        height: 100%;
+        font-size: px;
     }
 }
+
