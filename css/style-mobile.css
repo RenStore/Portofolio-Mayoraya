@@ -83,8 +83,9 @@
         max-width: 80px;
     }
     #p-shandy{
-        left: 124px;
-        top: 110px;
+        width: 100%;
+        left: 0;
+        position: relative;
     }
     #p-shandy h4{
         font-size: 25px;
@@ -158,8 +159,12 @@
     }
     .bar-persen{
         width: 140px;
-        margin-top: 9rem;
-        height: 400px;
+        height: 200px;
+        flex-direction: column;
+        gap: 0;
+        top: 0;
+        margin-top: 17%;
+        position: absolute;
     }
     .b-1{
         width: 50px;
@@ -213,12 +218,6 @@
         width: 70px;
         height: 100%;
     }
-    .bar-persen {
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 20px;
-    }
-
     .b-1{
         width: 100%;
     }
@@ -371,27 +370,9 @@
     }
     .b-projek1 p{
       transform: translateY(160px); 
-      transition: all 0.5s; 
-      pointer-events: none;
-      font-family: 'Chakra Petch',sans-serif;
-    }
-    .b-projek1 h3{
-        font-size: 40px;
-        text-shadow: 4px -4px 6px black;
-        font-family: 'Briem Hand',sans-serif;
     }
     .b-projek1 #renstore{
-        font-size: 40px;
-        transform: translateY(25px);
-        pointer-events: none;
-        transition: all 0.5s; 
-    }
-    .b-projek1 #renstore.renstore{
-        transform: translateY(-10px);
-        color: white;
-    }
-    .b-projek1 #d-renstore.d-renstore{
-        transform: translateY(-10px);
+        transform: translateY(40px);
     }
 
     /*==============================renstore=====================================*/
@@ -401,6 +382,7 @@
     }
     #d-renstore{
         font-size: 10px;
+        max-width: 230px;
     }
     .b-projek2 #shinka{
         font-size: 30px; 
