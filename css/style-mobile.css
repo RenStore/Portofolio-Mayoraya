@@ -1,5 +1,5 @@
 /* Tampilan Mobile */
-@media(min-width: 360px) and (max-width: 600px) {
+@media(min-width: 360px) and (max-width: 767px) {
 
     /* Reset */
     * {
@@ -157,15 +157,6 @@
         height: 220px;
         margin-top: 70px;
     }
-    .bar-persen{
-        width: 140px;
-        height: 62vh;
-        flex-direction: column;
-        top: 0;
-        margin-top: 70%;
-        position: absolute;
-        justify-content: space-between;
-    }
     .b-1{
         width: 50px;
         height: 15px;
@@ -183,7 +174,7 @@
             width: 0;
         }
         100%{
-            width: 120px;
+            width: 90px;
         }
     }
     @keyframes bar3 /*keyframe-js----->*/{
@@ -199,7 +190,7 @@
         height: 100%;
     }
     .load-html{
-        width: 120px;
+        width: 90px;
         height: 100%;
     }
     .load-js{
@@ -317,22 +308,6 @@
         height: 200px;
         margin-top: 20px;
         overflow-x: hidden;
-    }
-    .animasi1{
-        width: 300px;
-        height: 30px;
-        font-size: 24px;
-    }
-    @keyframes animasi1{
-        0%{
-            transform: translateX(-120%);
-        }
-        50%{
-            transform: translateX(10%);
-        }
-        100%{
-            transform: translateX(200%);
-        }
     }
     .judul-projek h4{
         font-size: 30px;
